@@ -1,9 +1,7 @@
 ## A pair of functions that cache the inverse of a matrix
 ## Creates a special matrix object that can cache its inverse
 makeCacheMatrix <- function( m = matrix() ) {
-## Initialize the inverse 
 i <- NULL
-## Method to set the matrix
 set <- function( matrix ) {
 m <<- matrix
 i <<- NULL
