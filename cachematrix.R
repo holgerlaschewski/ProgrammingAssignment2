@@ -1,7 +1,7 @@
 ## A pair of functions that cache the inverse of a matrix
 ## Creates a special matrix object that can cache its inverse
 makeCacheMatrix <- function( m = matrix() ) {
-## Initialize the inverse property
+## Initialize the inverse 
 i <- NULL
 ## Method to set the matrix
 set <- function( matrix ) {
@@ -42,8 +42,8 @@ return(m)
 data <- x$get()
 ## Calculate the inverse using matrix multiplication
 m <- solve(data) %*% data
-## Set the inverse to the object
+## Set the object inverse
 x$setInverse(m)
-## Return the matrix
+## Return matrix
 m
 }
